@@ -1,0 +1,15 @@
+# tcl pkg-config source file
+
+prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+exec_prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+libdir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib
+includedir=${prefix}/include
+
+Name: Tool Command Language
+Description: Tcl is a powerful, easy-to-learn dynamic programming language, suitable for a wide range of uses.
+URL: https://www.tcl-tk.org/
+Version: 8.6.12
+Requires.private: zlib >= 1.2.3
+Libs: -L${libdir} -ltcl8.6 -ltclstub8.6
+Libs.private: -ldl -lz  -lpthread -lm
+Cflags: -I${includedir}

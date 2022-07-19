@@ -1,0 +1,12 @@
+prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+exec_prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libbrotlienc
+URL: https://github.com/google/brotli
+Description: Brotli encoder library
+Version: 1.0.9
+Libs: -L${libdir} -R${libdir} -lbrotlienc
+Requires.private: libbrotlicommon >= 1.0.2
+Cflags: -I${includedir}

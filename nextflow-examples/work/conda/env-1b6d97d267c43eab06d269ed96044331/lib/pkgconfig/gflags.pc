@@ -1,0 +1,14 @@
+prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+exec_prefix=${prefix}
+bindir=${prefix}/bin
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gflags
+Version: 2.2.2
+Description: A commandline flags library that allows for distributed flags.
+URL: http://gflags.github.io/gflags
+Requires:
+Libs: -L${libdir} -lgflags
+Libs.private: -lpthread 
+Cflags: -I${includedir}

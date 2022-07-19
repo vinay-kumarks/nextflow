@@ -1,0 +1,9 @@
+libdir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib
+includedir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/include
+
+Name: gtest
+Description: GoogleTest (without main() function)
+Version: 1.10.0
+URL: https://github.com/google/googletest
+Libs: -L${libdir} -lgtest -lpthread
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=1

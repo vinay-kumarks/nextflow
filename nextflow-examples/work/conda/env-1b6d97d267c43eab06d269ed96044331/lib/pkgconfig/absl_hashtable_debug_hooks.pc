@@ -1,0 +1,12 @@
+prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+exec_prefix=${prefix}
+libdir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib
+includedir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/include
+
+Name: absl_hashtable_debug_hooks
+Description: Abseil hashtable_debug_hooks library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_config = 20211102
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

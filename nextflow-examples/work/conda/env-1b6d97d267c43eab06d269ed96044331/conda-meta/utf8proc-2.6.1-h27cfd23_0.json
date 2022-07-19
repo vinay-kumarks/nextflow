@@ -1,0 +1,67 @@
+{
+  "build": "h27cfd23_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "libgcc-ng >=7.3.0"
+  ],
+  "extracted_package_dir": "/home/vinay/miniconda3/pkgs/utf8proc-2.6.1-h27cfd23_0",
+  "features": "",
+  "files": [
+    "include/utf8proc.h",
+    "lib/libutf8proc.so",
+    "lib/libutf8proc.so.2",
+    "lib/libutf8proc.so.2.4.1"
+  ],
+  "fn": "utf8proc-2.6.1-h27cfd23_0.conda",
+  "legacy_bz2_md5": "b45754c4fa24c5b4ce9d504c5b6cc4f1",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "/home/vinay/miniconda3/pkgs/utf8proc-2.6.1-h27cfd23_0",
+    "type": 1
+  },
+  "md5": "eb0368d9f93a2b1541d0d3fc265362d2",
+  "name": "utf8proc",
+  "package_tarball_full_path": "/home/vinay/miniconda3/pkgs/utf8proc-2.6.1-h27cfd23_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/utf8proc.h",
+        "path_type": "hardlink",
+        "sha256": "01958a0a4c23c17aeb20a9a297df61b8541dd87aa90d04007e2742fd8eed3269",
+        "sha256_in_prefix": "01958a0a4c23c17aeb20a9a297df61b8541dd87aa90d04007e2742fd8eed3269",
+        "size_in_bytes": 31001
+      },
+      {
+        "_path": "lib/libutf8proc.so",
+        "path_type": "softlink",
+        "sha256": "e4829be19cb0b6d7f7fa4468e6ab45bc91ad3294beca3e396f643e41e0aa9d0b",
+        "size_in_bytes": 345464
+      },
+      {
+        "_path": "lib/libutf8proc.so.2",
+        "path_type": "softlink",
+        "sha256": "e4829be19cb0b6d7f7fa4468e6ab45bc91ad3294beca3e396f643e41e0aa9d0b",
+        "size_in_bytes": 345464
+      },
+      {
+        "_path": "lib/libutf8proc.so.2.4.1",
+        "path_type": "hardlink",
+        "sha256": "e4829be19cb0b6d7f7fa4468e6ab45bc91ad3294beca3e396f643e41e0aa9d0b",
+        "sha256_in_prefix": "e4829be19cb0b6d7f7fa4468e6ab45bc91ad3294beca3e396f643e41e0aa9d0b",
+        "size_in_bytes": 345464
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "c10baf92a00a632813bb28f1812e5e547374a400f93d45301b917747c5ddf307",
+  "size": 315109,
+  "subdir": "linux-64",
+  "timestamp": 1611836033971,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/utf8proc-2.6.1-h27cfd23_0.conda",
+  "version": "2.6.1"
+}

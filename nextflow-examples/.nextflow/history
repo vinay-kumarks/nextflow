@@ -1,0 +1,2 @@
+2022-07-19 09:50:24	1m 11s	friendly_mclean	ERR	b29c1d9c4b7cbaa3daf04f5c544c614f	561b34c5-757e-4991-903e-f37b85910ca4	nextflow run test_data_access.nf
+2022-07-19 09:55:24	9s	jovial_kowalevski	OK	eb8daacfadeb2a7d4786e6d78aeb6901	f079f116-3de5-4706-a200-4e530848ea81	nextflow run test_data_access.nf

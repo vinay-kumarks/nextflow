@@ -1,0 +1,13 @@
+prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+exec_prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+libdir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib
+sharedlibdir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib
+includedir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.12
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

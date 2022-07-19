@@ -1,0 +1,8 @@
+  using gcc : 7.3.0 : x86_64-conda-linux-gnu-c++
+              : # options
+                  <archiver>x86_64-conda-linux-gnu-ar
+                  <cflags>"-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/include -fdebug-prefix-map=/opt/conda/conda-bld/bst_1655879425328/work=/usr/local/src/conda/bst-1.73.0 -fdebug-prefix-map=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331=/usr/local/src/conda-prefix"
+                  <cxxflags>"-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/include -fdebug-prefix-map=/opt/conda/conda-bld/bst_1655879425328/work=/usr/local/src/conda/bst-1.73.0 -fdebug-prefix-map=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331=/usr/local/src/conda-prefix"
+                  <linkflags>"-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib -Wl,-rpath-link,/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib -L/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib"
+                  <ranlib>x86_64-conda-linux-gnu-ranlib
+              ;

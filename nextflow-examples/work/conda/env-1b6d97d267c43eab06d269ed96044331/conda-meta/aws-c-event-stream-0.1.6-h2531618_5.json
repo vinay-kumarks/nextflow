@@ -1,0 +1,104 @@
+{
+  "build": "h2531618_5",
+  "build_number": 5,
+  "channel": "https://repo.anaconda.com/pkgs/main/linux-64",
+  "constrains": [],
+  "depends": [
+    "aws-c-common >=0.4.57,<0.4.58.0a0",
+    "aws-checksums >=0.1.9,<0.1.10.0a0",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0"
+  ],
+  "extracted_package_dir": "/home/vinay/miniconda3/pkgs/aws-c-event-stream-0.1.6-h2531618_5",
+  "features": "",
+  "files": [
+    "include/aws/event-stream/event_stream.h",
+    "include/aws/event-stream/event_stream_exports.h",
+    "lib/aws-c-event-stream/cmake/aws-c-event-stream-config.cmake",
+    "lib/aws-c-event-stream/cmake/shared/aws-c-event-stream-targets-release.cmake",
+    "lib/aws-c-event-stream/cmake/shared/aws-c-event-stream-targets.cmake",
+    "lib/libaws-c-event-stream.so",
+    "lib/libaws-c-event-stream.so.0unstable",
+    "lib/libaws-c-event-stream.so.1.0.0"
+  ],
+  "fn": "aws-c-event-stream-0.1.6-h2531618_5.conda",
+  "legacy_bz2_md5": "6b7ceb5ff64fc9f4537bfe7a2d7fe4a0",
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "link": {
+    "source": "/home/vinay/miniconda3/pkgs/aws-c-event-stream-0.1.6-h2531618_5",
+    "type": 1
+  },
+  "md5": "9f79cc0162f2605f1ee11c3f209aa1b6",
+  "name": "aws-c-event-stream",
+  "package_tarball_full_path": "/home/vinay/miniconda3/pkgs/aws-c-event-stream-0.1.6-h2531618_5.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/aws/event-stream/event_stream.h",
+        "path_type": "hardlink",
+        "sha256": "5475a47388b36add7049223d7eb7d68b529e7e14aafbb7217dc59c30435428a5",
+        "sha256_in_prefix": "5475a47388b36add7049223d7eb7d68b529e7e14aafbb7217dc59c30435428a5",
+        "size_in_bytes": 14744
+      },
+      {
+        "_path": "include/aws/event-stream/event_stream_exports.h",
+        "path_type": "hardlink",
+        "sha256": "6fa66b9f9753c27e6addcc1a8a5106c6c95738396d31e3f2df899643f096b658",
+        "sha256_in_prefix": "6fa66b9f9753c27e6addcc1a8a5106c6c95738396d31e3f2df899643f096b658",
+        "size_in_bytes": 1136
+      },
+      {
+        "_path": "lib/aws-c-event-stream/cmake/aws-c-event-stream-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "535f916710440237ed21184eeddb01d4c85ead32abd77095b0fdc8547120db06",
+        "sha256_in_prefix": "535f916710440237ed21184eeddb01d4c85ead32abd77095b0fdc8547120db06",
+        "size_in_bytes": 293
+      },
+      {
+        "_path": "lib/aws-c-event-stream/cmake/shared/aws-c-event-stream-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "e3415177394753a3f46c81c5ae52206f4749cce387ecb46ab9481d031c136abd",
+        "sha256_in_prefix": "e3415177394753a3f46c81c5ae52206f4749cce387ecb46ab9481d031c136abd",
+        "size_in_bytes": 927
+      },
+      {
+        "_path": "lib/aws-c-event-stream/cmake/shared/aws-c-event-stream-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "e9e05a09e37270aa0476566386f8dab69733028ba06f56bfbd81878750cd8693",
+        "sha256_in_prefix": "e9e05a09e37270aa0476566386f8dab69733028ba06f56bfbd81878750cd8693",
+        "size_in_bytes": 3639
+      },
+      {
+        "_path": "lib/libaws-c-event-stream.so",
+        "path_type": "softlink",
+        "sha256": "4b8c9229bb6b35f5a4d99ff2f25a23136eed66f67291806bee611c32e723f734",
+        "size_in_bytes": 36840
+      },
+      {
+        "_path": "lib/libaws-c-event-stream.so.0unstable",
+        "path_type": "softlink",
+        "sha256": "4b8c9229bb6b35f5a4d99ff2f25a23136eed66f67291806bee611c32e723f734",
+        "size_in_bytes": 36840
+      },
+      {
+        "_path": "lib/libaws-c-event-stream.so.1.0.0",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/tmp/build/80754af9/aws-c-event-stream_1603894507365/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "4b8c9229bb6b35f5a4d99ff2f25a23136eed66f67291806bee611c32e723f734",
+        "sha256_in_prefix": "2c13b222bfe553fdbee6f79d63ea45af3dab229a404ba2147e1a6d272e2bd8cd",
+        "size_in_bytes": 36840
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "244accbf9cfeee6f41723d6706751a3f94dd0d1b516d1788c354a02c69425682",
+  "size": 25186,
+  "subdir": "linux-64",
+  "timestamp": 1603894551837,
+  "track_features": "",
+  "url": "https://repo.anaconda.com/pkgs/main/linux-64/aws-c-event-stream-0.1.6-h2531618_5.conda",
+  "version": "0.1.6"
+}

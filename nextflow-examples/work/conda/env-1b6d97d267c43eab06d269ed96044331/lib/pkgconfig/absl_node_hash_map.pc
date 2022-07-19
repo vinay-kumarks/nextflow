@@ -1,0 +1,12 @@
+prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+exec_prefix=${prefix}
+libdir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib
+includedir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/include
+
+Name: absl_node_hash_map
+Description: Abseil node_hash_map library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_container_memory = 20211102, absl_hash_function_defaults = 20211102, absl_node_hash_policy = 20211102, absl_raw_hash_map = 20211102, absl_algorithm_container = 20211102, absl_memory = 20211102
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

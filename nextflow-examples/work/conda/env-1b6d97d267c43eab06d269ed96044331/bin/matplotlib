@@ -1,0 +1,11 @@
+#!/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/bin/python
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from pandas import plotting
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(plotting._matplotlib())

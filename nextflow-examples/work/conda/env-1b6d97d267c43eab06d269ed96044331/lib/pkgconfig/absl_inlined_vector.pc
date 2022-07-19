@@ -1,0 +1,12 @@
+prefix=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
+exec_prefix=${prefix}
+libdir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib
+includedir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/include
+
+Name: absl_inlined_vector
+Description: Abseil inlined_vector library
+URL: https://abseil.io/
+Version: 20211102
+Requires: absl_algorithm = 20211102, absl_core_headers = 20211102, absl_inlined_vector_internal = 20211102, absl_throw_delegate = 20211102, absl_memory = 20211102
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

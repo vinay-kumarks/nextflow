@@ -1,0 +1,8 @@
+includedir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/include
+libdir=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331/lib
+
+Name: re2
+Description: RE2 is a fast, safe, thread-friendly regular expression engine.
+Version: 0.0.0
+Cflags: -pthread -I${includedir}
+Libs: -pthread -L${libdir} -lre2
