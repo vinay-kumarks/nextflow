@@ -1,7 +1,7 @@
 #!/usr/bin/env nextflow
 
 params.range = 100
-project_dir = "/home/vinay"
+project_dir = "/home/vinay/nextflow-examples"
 
 /*
  * A trivial Perl script that produces a list of number pairs
