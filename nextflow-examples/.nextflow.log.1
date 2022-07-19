@@ -1,47 +1,123 @@
-Jul-19 09:55:23.978 [main] DEBUG nextflow.cli.Launcher - $> nextflow run test_data_access.nf
-Jul-19 09:55:24.051 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.4
-Jul-19 09:55:24.134 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
-Jul-19 09:55:24.156 [main] INFO  nextflow.cli.CmdRun - Launching `test_data_access.nf` [jovial_kowalevski] DSL2 - revision: eb8daacfad
-Jul-19 09:55:24.171 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/home/vinay/.nextflow/plugins; core-plugins: nf-amazon@1.7.2,nf-azure@0.13.2,nf-console@1.0.3,nf-ga4gh@1.0.3,nf-google@1.1.4,nf-sqldb@0.4.0,nf-tower@1.4.0
-Jul-19 09:55:24.173 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
-Jul-19 09:55:24.184 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
-Jul-19 09:55:24.186 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
-Jul-19 09:55:24.190 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
-Jul-19 09:55:24.202 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
-Jul-19 09:55:24.258 [main] DEBUG nextflow.Session - Session uuid: f079f116-3de5-4706-a200-4e530848ea81
-Jul-19 09:55:24.259 [main] DEBUG nextflow.Session - Run name: jovial_kowalevski
-Jul-19 09:55:24.260 [main] DEBUG nextflow.Session - Executor pool size: 12
-Jul-19 09:55:24.295 [main] DEBUG nextflow.cli.CmdRun - 
-  Version: 22.04.4 build 5706
-  Created: 19-06-2022 20:51 UTC (20-06-2022 02:21 IDT)
-  System: Linux 5.10.16.3-microsoft-standard-WSL2
-  Runtime: Groovy 3.0.10 on OpenJDK 64-Bit Server VM 11.0.15+10-Ubuntu-0ubuntu0.20.04.1
-  Encoding: UTF-8 (UTF-8)
-  Process: 32532@APBANL-R90XW6ZM [127.0.1.1]
-  CPUs: 12 - Mem: 24.8 GB (11.2 GB) - Swap: 7 GB (7 GB)
-Jul-19 09:55:24.322 [main] DEBUG nextflow.Session - Work-dir: /home/vinay/nextflow-examples/work [ext2/ext3]
-Jul-19 09:55:24.322 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/vinay/nextflow-examples/bin
-Jul-19 09:55:24.330 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
-Jul-19 09:55:24.344 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
-Jul-19 09:55:24.368 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
-Jul-19 09:55:24.380 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
-Jul-19 09:55:24.483 [main] DEBUG nextflow.Session - Session start invoked
-Jul-19 09:55:25.163 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
-Jul-19 09:55:25.276 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
-Jul-19 09:55:25.276 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
-Jul-19 09:55:25.282 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
-Jul-19 09:55:25.288 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=24.8 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
-Jul-19 09:55:25.473 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: pyTask, getDataOverExternalScript, getData, perlTask
-Jul-19 09:55:25.474 [main] DEBUG nextflow.Session - Ignite dataflow network (1)
-Jul-19 09:55:25.475 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > getDataOverExternalScript
-Jul-19 09:55:25.476 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
-Jul-19 09:55:25.476 [main] DEBUG nextflow.Session - Session await
-Jul-19 09:55:25.605 [Actor Thread 6] DEBUG nextflow.conda.CondaCache - conda found local env for environment=certifi pyarrow pandas; path=/home/vinay/nextflow-examples/work/conda/env-1b6d97d267c43eab06d269ed96044331
-Jul-19 09:55:25.693 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
-Jul-19 09:55:25.699 [Task submitter] INFO  nextflow.Session - [5b/510c60] Submitted process > getDataOverExternalScript
-Jul-19 09:55:32.860 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: getDataOverExternalScript; status: COMPLETED; exit: 0; error: -; workDir: /home/vinay/nextflow-examples/work/5b/510c60c998226e06839543a6bc7d96]
-Jul-19 09:55:32.872 [main] DEBUG nextflow.Session - Session await > all process finished
-Jul-19 09:55:32.873 [main] DEBUG nextflow.Session - Session await > all barriers passed
-Jul-19 09:55:32.887 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=7.1s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
-Jul-19 09:55:32.963 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
-Jul-19 09:55:32.970 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
+Jul-19 09:58:18.959 [main] DEBUG nextflow.cli.Launcher - $> nextflow run 'https://github.com/vinay-kumarks/nextflow/nextflow-examples'
+Jul-19 09:58:19.049 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.4
+Jul-19 09:58:19.099 [main] DEBUG nextflow.scm.AssetManager - Repository URL: https://github.com/vinay-kumarks/nextflow/nextflow-examples; Project: vinay-kumarks/nextflow/nextflow-examples; Hub provider: github
+Jul-19 09:58:19.108 [main] INFO  nextflow.cli.CmdRun - Pulling vinay-kumarks/nextflow/nextflow-examples ...
+Jul-19 09:58:19.110 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/nextflow.config
+Jul-19 09:58:19.643 [main] DEBUG nextflow.scm.RepositoryProvider - Response status: 404 -- {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+Jul-19 09:58:19.647 [main] WARN  nextflow.scm.AssetManager - Cannot read project manifest -- Cause: Remote resource not found: https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/nextflow.config
+nextflow.exception.AbortOperationException: Remote resource not found: https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/nextflow.config
+	at nextflow.scm.RepositoryProvider.checkResponse(RepositoryProvider.groovy:189)
+	at nextflow.scm.RepositoryProvider.invoke(RepositoryProvider.groovy:138)
+	at nextflow.scm.RepositoryProvider.memoizedMethodPriv$invokeAndParseResponseString(RepositoryProvider.groovy:220)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1029)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1012)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:101)
+	at nextflow.scm.RepositoryProvider$_closure2.doCall(RepositoryProvider.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.lambda$call$0(Memoize.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:113)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.call(Memoize.java:136)
+	at groovy.lang.Closure.call(Closure.java:428)
+	at nextflow.scm.RepositoryProvider.invokeAndParseResponse(RepositoryProvider.groovy)
+	at nextflow.scm.GithubRepositoryProvider.readBytes(GithubRepositoryProvider.groovy:100)
+	at nextflow.scm.RepositoryProvider.readText(RepositoryProvider.groovy:234)
+	at nextflow.scm.AssetManager.getManifest0(AssetManager.groovy:457)
+	at nextflow.scm.AssetManager.memoizedMethodPriv$getManifest(AssetManager.groovy:450)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1029)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1012)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:101)
+	at nextflow.scm.AssetManager$_closure2.doCall(AssetManager.groovy)
+	at nextflow.scm.AssetManager$_closure2.doCall(AssetManager.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.lambda$call$0(Memoize.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:113)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.call(Memoize.java:136)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.scm.AssetManager.getManifest(AssetManager.groovy)
+	at nextflow.scm.AssetManager.getMainScriptName(AssetManager.groovy:433)
+	at nextflow.scm.AssetManager.checkValidRemoteRepo(AssetManager.groovy:391)
+	at nextflow.scm.AssetManager.download(AssetManager.groovy:600)
+	at nextflow.scm.AssetManager.download(AssetManager.groovy)
+	at nextflow.cli.CmdRun.getScriptFile0(CmdRun.groovy:484)
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:417)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:287)
+	at nextflow.cli.Launcher.run(Launcher.groovy:480)
+	at nextflow.cli.Launcher.main(Launcher.groovy:639)
+Jul-19 09:58:19.655 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/main.nf
+Jul-19 09:58:19.897 [main] DEBUG nextflow.scm.RepositoryProvider - Response status: 404 -- {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+Jul-19 09:58:19.898 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Remote resource not found: https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/main.nf
+	at nextflow.scm.RepositoryProvider.checkResponse(RepositoryProvider.groovy:189)
+	at nextflow.scm.RepositoryProvider.invoke(RepositoryProvider.groovy:138)
+	at nextflow.scm.RepositoryProvider.memoizedMethodPriv$invokeAndParseResponseString(RepositoryProvider.groovy:220)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:1029)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:1012)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:101)
+	at nextflow.scm.RepositoryProvider$_closure2.doCall(RepositoryProvider.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.lambda$call$0(Memoize.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:113)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.call(Memoize.java:136)
+	at groovy.lang.Closure.call(Closure.java:428)
+	at nextflow.scm.RepositoryProvider.invokeAndParseResponse(RepositoryProvider.groovy)
+	at nextflow.scm.GithubRepositoryProvider.readBytes(GithubRepositoryProvider.groovy:100)
+	at nextflow.scm.RepositoryProvider.validateFor(RepositoryProvider.groovy:248)
+	at nextflow.scm.AssetManager.checkValidRemoteRepo(AssetManager.groovy:392)
+	at nextflow.scm.AssetManager.download(AssetManager.groovy:600)
+	at nextflow.scm.AssetManager.download(AssetManager.groovy)
+	at nextflow.cli.CmdRun.getScriptFile0(CmdRun.groovy:484)
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:417)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:287)
+	at nextflow.cli.Launcher.run(Launcher.groovy:480)
+	at nextflow.cli.Launcher.main(Launcher.groovy:639)

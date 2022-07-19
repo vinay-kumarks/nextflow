@@ -1,10 +1,10 @@
-Jul-19 09:58:18.959 [main] DEBUG nextflow.cli.Launcher - $> nextflow run 'https://github.com/vinay-kumarks/nextflow/nextflow-examples'
-Jul-19 09:58:19.049 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.4
-Jul-19 09:58:19.099 [main] DEBUG nextflow.scm.AssetManager - Repository URL: https://github.com/vinay-kumarks/nextflow/nextflow-examples; Project: vinay-kumarks/nextflow/nextflow-examples; Hub provider: github
-Jul-19 09:58:19.108 [main] INFO  nextflow.cli.CmdRun - Pulling vinay-kumarks/nextflow/nextflow-examples ...
-Jul-19 09:58:19.110 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/nextflow.config
-Jul-19 09:58:19.643 [main] DEBUG nextflow.scm.RepositoryProvider - Response status: 404 -- {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-Jul-19 09:58:19.647 [main] WARN  nextflow.scm.AssetManager - Cannot read project manifest -- Cause: Remote resource not found: https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/nextflow.config
+Jul-19 11:07:12.928 [main] DEBUG nextflow.cli.Launcher - $> nextflow run 'https://github.com/vinay-kumarks/nextflow/nextflow-examples'
+Jul-19 11:07:13.005 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 22.04.4
+Jul-19 11:07:13.638 [main] DEBUG nextflow.scm.AssetManager - Repository URL: https://github.com/vinay-kumarks/nextflow/nextflow-examples; Project: vinay-kumarks/nextflow/nextflow-examples; Hub provider: github
+Jul-19 11:07:13.647 [main] INFO  nextflow.cli.CmdRun - Pulling vinay-kumarks/nextflow/nextflow-examples ...
+Jul-19 11:07:13.648 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials your-user-name:**************************] -> https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/nextflow.config
+Jul-19 11:07:14.232 [main] DEBUG nextflow.scm.RepositoryProvider - Response status: 404 -- {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+Jul-19 11:07:14.235 [main] WARN  nextflow.scm.AssetManager - Cannot read project manifest -- Cause: Remote resource not found: https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/nextflow.config
 nextflow.exception.AbortOperationException: Remote resource not found: https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/nextflow.config
 	at nextflow.scm.RepositoryProvider.checkResponse(RepositoryProvider.groovy:189)
 	at nextflow.scm.RepositoryProvider.invoke(RepositoryProvider.groovy:138)
@@ -77,9 +77,9 @@ nextflow.exception.AbortOperationException: Remote resource not found: https://a
 	at nextflow.cli.CmdRun.run(CmdRun.groovy:287)
 	at nextflow.cli.Launcher.run(Launcher.groovy:480)
 	at nextflow.cli.Launcher.main(Launcher.groovy:639)
-Jul-19 09:58:19.655 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/main.nf
-Jul-19 09:58:19.897 [main] DEBUG nextflow.scm.RepositoryProvider - Response status: 404 -- {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
-Jul-19 09:58:19.898 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+Jul-19 11:07:14.239 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials your-user-name:**************************] -> https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/main.nf
+Jul-19 11:07:14.505 [main] DEBUG nextflow.scm.RepositoryProvider - Response status: 404 -- {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+Jul-19 11:07:14.506 [main] DEBUG nextflow.cli.Launcher - Operation aborted
 nextflow.exception.AbortOperationException: Remote resource not found: https://api.github.com/repos/vinay-kumarks/nextflow/nextflow-examples/contents/main.nf
 	at nextflow.scm.RepositoryProvider.checkResponse(RepositoryProvider.groovy:189)
 	at nextflow.scm.RepositoryProvider.invoke(RepositoryProvider.groovy:138)
